@@ -1,6 +1,61 @@
 
-body{
+.container{
+  margin-left: 0%;
+  margin-right: 0%;
+  width: 100%;
+}
+.intro{
   background-color: #dcd8d8;
+  padding-top: 75px;
+  padding-bottom: 125px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+.intro span{
+  color: #EF788C;
+}
+
+.pc_img{
+  text-align: center;
+}
+.pc_img img{
+  margin-top: -70px;
+}
+.rectangle{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.rectangle div{
+  position: relative;
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 200px;
+  height: 200px;
+}
+#rectangle1{
+  background-color: #D0CFCF;
+}
+#rectangle2{
+  /*position: relative;*/
+  background-color: #FFFBFE;
+}
+#rectangle3{
+  background-color: #E85D75;
+}
+#rectangle4{
+  background-color: #BEA8A7;
+}
+#rectangle2 img{
+  position: relative;
+  top: 60px;
+  text-align: center;
+}
+#rectangle2 a{
+  position: relative;
+  top: 60px;
+  text-align: center;
+  color: black;
 }
 
 /*Sliding drawer menu icon, For Screen size>420px display:none;--> hide*/
@@ -40,7 +95,7 @@ header{
     width:100%;
     z-index:2;
     position:fixed;
-    background:rgba(255,255,255,.7);
+    /*background:rgba(255,255,255,.7);*/
     display:table;
     font-size:0px;
     line-height:0;
@@ -52,7 +107,7 @@ nav {
     text-align:right;
     vertical-align:bottom;
 }
-header h1 a img {
+header a img {
     height:40px;
     margin:10px;
 }
