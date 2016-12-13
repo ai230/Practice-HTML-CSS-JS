@@ -11,6 +11,7 @@
   position: relative;
   color: white;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 .intro span{
   color: #EF788C;
@@ -23,8 +24,8 @@
   margin-top: -70px;
 }
 .rectangle{
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .rectangle div{
   position: relative;
