@@ -16,48 +16,48 @@
 .intro span{
   color: #EF788C;
 }
-
-.pc_img{
-  text-align: center;
-}
 .pc_img img{
   margin-top: -70px;
+  margin-bottom: 10%;
 }
-.rectangle{
-  margin-top: 10px;
-  margin-bottom: 10px;
+.rectangle img{
+  margin: 0.5%;
+  max-width: 280px;
+  width: 15%;
 }
-.rectangle div{
+
+/*.rectangle div{
   position: relative;
   margin-right: 5px;
   margin-left: 5px;
-  width: 200px;
-  height: 200px;
-}
-#rectangle1{
+}*/
+/*#rectangle1{
   background-color: #D0CFCF;
-}
-#rectangle2{
-  /*position: relative;*/
-  background-color: #FFFBFE;
-}
-#rectangle3{
+  width: 100%;
+  height: 100px;
+}*/
+
+/*#rectangle3{
   background-color: #E85D75;
-}
-#rectangle4{
+  width: 30%;
+  height: 30%;
+}*/
+/*#rectangle4{
   background-color: #BEA8A7;
-}
-#rectangle2 img{
+  width: 30%;
+  height: 30%;
+}*/
+/*#rectangle2 img{
   position: relative;
   top: 60px;
   text-align: center;
-}
-#rectangle2 a{
+}*/
+/*#rectangle2 a{
   position: relative;
   top: 60px;
   text-align: center;
   color: black;
-}
+}*/
 
 /*Sliding drawer menu icon, For Screen size>420px display:none;--> hide*/
 #navToggle {
