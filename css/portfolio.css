@@ -65,8 +65,9 @@
 header{
     width:100%;
     z-index:2;
-    position:fixed;
+    /*position:fixed;*/
     /*background:rgba(255,255,255,.7);*/
+    background: #dcd8d8;
     display:table;
     font-size:0px;
     line-height:0;
@@ -89,7 +90,7 @@ header ul {
     text-align: center;
 }
 header ul li {
-    margin-left:3px;
+    margin-left:17px;
     display:inline-block;
 }
 header ul li::after {
@@ -112,6 +113,7 @@ header ul li a:hover {
 
       /*Navigation Menu*/
       header ul{
+        z-index:2;
         margin:0px;
         position: absolute;
         right:0px;
@@ -175,19 +177,41 @@ header ul li a:hover {
           -moz-transform:rotate(45deg);
           transform:rotate(45deg);
       }
-      footer li{
-        float: none;
-      }
+}
+#formsize{
+  width:80%;
+  margin-left: 10px;
 }
 
+/*footer*/
 footer{
-      width: 100%;
+    margin-top: 25px;
+    background-color: #dcd8d8;
+    height: 100px;
+    width:100%;
+    display:table;
 }
-footer li{
-      float: left;
-      text-align: center
+footer ul {
+    font-size: 13px;
+    line-height: 1px;
+    margin: 0px 10px 10px 0px;
+    text-align: center;
+}
+footer ul li {
+    margin-top: 25px;
+    margin-left:17px;
+    display:inline-block;
 }
 footer ul li a:hover {
     background: red;
 }
-      　
+
+footer h1 nav {
+    display:table-cell;
+}
+
+footer ul li a {
+  color:inherit;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+}

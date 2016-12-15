@@ -17,7 +17,7 @@
 </head>
 <body>
     <header class>
-        <a href="index.html"><img src="img/A_logo.png" alt="logo"></a>
+        <a id="Home" href="index.html"><img src="img/A_logo.png" alt="logo"></a>
         <div id="navToggle">
           <div>
            <span></span> <span></span> <span></span>
@@ -25,11 +25,12 @@
         </div><!--#navToggle END-->
         <nav>
           <ul>
-           <li><a href="#">HOME</a></li>
-           <li><a href="#">ABOUT ME</a></li>
+           <li><a id="moveHome" href="#Home">HOME</a></li>
+           <li><a id="moveAboutme"  href="#Aboutme">ABOUT ME</a></li>
+           <li><a href="#">WORK</a></li>
+           <li><a href="#">SKILLS</a></li>
+           <li><a href="#">EXPERIENCED</a></li>
            <li><a href="#">CONTACT</a></li>
-           <li><a href="#">MENU3</a></li>
-           <li><a href="#">MENU4</a></li>
           </ul>
         </nav>
 
@@ -77,8 +78,8 @@
     </div>
 
     <div class="row">
-        <div class=" center">
-            <div class="col-md-12" style="background-color:#dcd8d8">
+        <div class="center">
+            <div class="col-md-12" id="Aboutme" style="background-color:#dcd8d8">
               <h3>ABOUT ME</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam molestie felis sit amet dignissim. In vehicula placerat tortor, eget tempus mauris blandit scelerisque. Pellentesque ornare felis a augue finibus rutrum. Curabitur bibendum, purus feugiat sagittis convallis, justo tellus tincidunt quam, eu aliquam tortor nisl sed odio. Sed quis sem pulvinar, porta odio sit amet, lobortis augue. Nam et laoreet augue, sit amet lacinia turpis. </p>
             </div>
@@ -96,8 +97,8 @@
             </div>
         </div>
         <div class="row">
-          <div style="background-color:#dcd8d8">
-            <div class="col-md-6">
+          <div>
+            <div class="col-md-12" id="formsize" style="background-color:#B5838D">
               <h3>CONTACT</h3>
 
               <form id="mainForm" action="#">
@@ -120,8 +121,6 @@
                 <button type="button" onclick="alert('Hello World!')">SUBMIT</button>
               </form>
 
-            </div>
-            <div class="col-md-6" style="background-color:#dcd8d8">
             </div>
 
           </div>
