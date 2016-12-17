@@ -14,6 +14,17 @@
   <script type="text/javascript" src="js/portfolio.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $('.bxslider').bxSlider({
+                    auto: true,
+                });
+        	});
+    </script>
+
 </head>
 <body>
     <header class>
@@ -27,10 +38,10 @@
           <ul>
            <li><a id="moveHome" href="#Home">HOME</a></li>
            <li><a id="moveAboutme"  href="#Aboutme">ABOUT ME</a></li>
-           <li><a href="#">WORK</a></li>
-           <li><a href="#">SKILLS</a></li>
-           <li><a href="#">EXPERIENCED</a></li>
-           <li><a href="#">CONTACT</a></li>
+           <li><a id="moveWork" href="#Work">WORK</a></li>
+           <li><a id="moveSkills" href="#Skills">SKILLS</a></li>
+           <li><a id="moveExperienced" href="#Experienced">EXPERIENCED</a></li>
+           <li><a id="moveContact" href="#Contact">CONTACT</a></li>
           </ul>
         </nav>
 
@@ -46,35 +57,40 @@
     </div>
 
     <div class="row">
-      <div class="col-md-12 pc_img">
-        <center>
-          <img src="img/pc.png" class="img-responsive" alt="pc">
-        </center>
+      <div class="col-md-12">
+          <!-- <ul class="bxslider">
+        		<li><img src="img/news1.jpg"></li>
+        		<li><img src="img/news2.jpg"></li>
+        		<li><img src="img/news3.jpg"></li>
+        	</ul> -->
+          <div id="slideshow" class="img-responsive">
+              <img src="img/news1.jpg" alt="" class="active" />
+              <img src="img/news2.jpg" alt="" />
+              <img src="img/news3.jpg" alt="" />
+          </div>
+
       </div>
     </div>
 
-    <div class="row">
+
+
+    <div class="row center">
       <div class="col-md-12 rectangle img-responsive">
           <div class="rectangle">
-            <center>
               <img src="img/R1.png" alt="R">
-              <img src="img/D4AFC6_Hart.png" alt="R">
+              <img src="img/D4AFC6-Hart.png" alt="R">
               <img src="img/F2F7F2.png" alt="R">
               <img src="img/D4AFC6.png" alt="R">
-            </center>
           </div>
       </div>
       <div class="col-md-12 rectangle img-responsive">
           <div class="rectangle">
-            <center>
               <img src="img/FDC9E0.png" alt="R">
               <img src="img/gray.png" alt="R">
               <img src="img/R2.png" alt="R">
               <img src="img/gray.png" alt="R">
-            </center>
           </div>
       </div>
-
     </div>
 
     <div class="row">
@@ -83,22 +99,23 @@
               <h3>ABOUT ME</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam molestie felis sit amet dignissim. In vehicula placerat tortor, eget tempus mauris blandit scelerisque. Pellentesque ornare felis a augue finibus rutrum. Curabitur bibendum, purus feugiat sagittis convallis, justo tellus tincidunt quam, eu aliquam tortor nisl sed odio. Sed quis sem pulvinar, porta odio sit amet, lobortis augue. Nam et laoreet augue, sit amet lacinia turpis. </p>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12" id="Skills">
               <h3>SKILLS</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam molestie felis sit amet dignissim. In vehicula placerat tortor, eget tempus mauris blandit scelerisque. Pellentesque ornare felis a augue finibus rutrum. Curabitur bibendum, purus feugiat sagittis convallis, justo tellus tincidunt quam, eu aliquam tortor nisl sed odio. Sed quis sem pulvinar, porta odio sit amet, lobortis augue. Nam et laoreet augue, sit amet lacinia turpis. </p>
             </div>
-            <div class="col-md-12 center" style="background-color:#dcd8d8">
+            <div class="col-md-12 center" id="Work" style="background-color:#dcd8d8">
               <h3>WORK</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam molestie felis sit amet dignissim. In vehicula placerat tortor, eget tempus mauris blandit scelerisque. Pellentesque ornare felis a augue finibus rutrum. Curabitur bibendum, purus feugiat sagittis convallis, justo tellus tincidunt quam, eu aliquam tortor nisl sed odio. Sed quis sem pulvinar, porta odio sit amet, lobortis augue. Nam et laoreet augue, sit amet lacinia turpis. </p>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12" id="Experienced">
               <h3>EXPERIENCED</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam molestie felis sit amet dignissim. In vehicula placerat tortor, eget tempus mauris blandit scelerisque. Pellentesque ornare felis a augue finibus rutrum. Curabitur bibendum, purus feugiat sagittis convallis, justo tellus tincidunt quam, eu aliquam tortor nisl sed odio. Sed quis sem pulvinar, porta odio sit amet, lobortis augue. Nam et laoreet augue, sit amet lacinia turpis. </p>
             </div>
         </div>
-        <div class="row">
-          <div>
-            <div class="col-md-12" id="formsize" style="background-color:#B5838D">
+        <div class="row" id="contactform">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-4" id="Contact">
               <h3>CONTACT</h3>
 
               <form id="mainForm" action="#">
@@ -114,16 +131,18 @@
                   <label for="txtComments">COMMENTS:</label>
                   <textarea class="form-control" id="txtComments" name="comments" rows="3" placeholder="Comments"></textarea>
                 </div>
-                <div class="form-group">
-                  <label for="toEmail">To:</label>
-                  <input type="email" id="toEmail" name="to" class="form-control" placeholder="example@example.com" />
-                </div>
-                <button type="button" onclick="alert('Hello World!')">SUBMIT</button>
+
+                <input type="hidden" name="to" value="ay36230@gmail.com" />
+
+                <button>SUBMIT</button><br />
+                <span id="result"></span>
               </form>
 
             </div>
-
+            <div class="col-md-7">
+            </div>
           </div>
+
         </div>
       </div>
   </div>
