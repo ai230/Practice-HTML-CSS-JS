@@ -16,6 +16,7 @@
 .intro span{
   color: #EF788C;
 }
+
 /*slide show-----------*/
 
 .bx-wrapper{
@@ -54,20 +55,63 @@
 }
 
 /*---------------------*/
-/*.pc_img img{
+#pc_img{
+  width: 70%;
   position: absolute;
   top: -70px;
   margin-bottom: 10%;
   left: 50%;
   transform: translate(-50%, 0);
-}*/
+}
+.rectangle{
+    color: #614e4e;
+}
 .rectangle img{
   margin: 0.5%;
   max-width: 280px;
   width: 15%;
+  position: relative;
 }
 .center{
   text-align: center;
+}
+.rectangle p{
+  font-size: 62.5%;
+}
+#rectangle2{
+  position: absolute;
+  z-index:2;
+  font-size: 3vW;
+  top: 27%;
+  left: 37%;
+}
+#rectangle3{
+  position: absolute;
+  z-index:2;
+  font-size: 3vW;
+  top: 27%;
+  left: 52.5%;
+}
+#rectangle5{
+  position: absolute;
+  z-index:2;
+  font-size: 3vW;
+  top: 27%;
+  left: 23%;
+}
+#rectangle6{
+  position: absolute;
+  z-index:2;
+  font-size: 3vW;
+  top: 27%;
+  left: 38.5%;
+}
+#rectangle8{
+  position: absolute;
+  z-index:2;
+  font-size: 3vW;
+  top: 27%;
+  left: 69.5%;
 }
 
 /*Sliding drawer menu icon, For Screen size>420px display:none;--> hide*/

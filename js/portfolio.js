@@ -21,16 +21,16 @@ $(function(){
   });
 });
 $(function(){
-  $("#moveWork").click(function(){
+  $("#movePortfolio").click(function(){
       $('body').animate({
-         scrollTop: $("#Work").offset().top
+         scrollTop: $("#Portfolio").offset().top
       },1200);
   });
 });
 $(function(){
-  $("#moveExperienced").click(function(){
+  $("#moveCareer").click(function(){
       $('body').animate({
-         scrollTop: $("#Experienced").offset().top
+         scrollTop: $("#Career").offset().top
       },1200);
   });
 });
