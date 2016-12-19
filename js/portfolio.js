@@ -83,23 +83,15 @@ $(function(){
   });
 });
 
-function slideSwitch() {
-    var $active = $('#slideshow img.active');
+$(function(){
+  $("#slideshow > div:gt(0)").hide();
 
-    if ( $active.length == 0 ) $active = $('#slideshow img:last');
-
-    var $next =  $active.next().length ? $active.next()
-        : $('#slideshow img:first');
-
-    $active.addClass('last-active');
-
-    $next.css({opacity: 0.0})
-        .addClass('active')
-        .animate({opacity: 1.0}, 1000, function() {
-            $active.removeClass('active last-active');
-        });
-}
-
-$(function() {
-    setInterval( "slideSwitch()", 1000 );
+  setInterval(function() {
+    $('#slideshow > div:first')
+      .fadeOut(1000)
+      .next()
+      .fadeIn(1000)
+      .end()
+      .appendTo('#slideshow');
+  },  3000);
 });

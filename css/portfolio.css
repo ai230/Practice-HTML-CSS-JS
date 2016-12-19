@@ -23,52 +23,45 @@
   color: #EF788C;
 }
 /*slide show-----------*/
+#slideshow {
+  z-index: 2;
+  position: absolute;
+  width: 500px;
+  height: 281px;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
 
-.bx-wrapper{
-  width: 70%;
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.bx-wrapperul ul li, .bx-viewport ul li{
+  /*width: 40%;*/
   z-index:2;
   /*background-image: url(../img/pc.png);
-  background-size: cover;
-  position: absolute;*/
-  top: -65px;
-  height: 500px;
+  background-size: cover;*/
+  position: absolute;
+  top: -35px;
+  left: 50%;
+    transform: translate(-50%, 0);
 }
-/*.bx-viewport{
-  width: 60%;
-  height: 60%;
-}*/
-
-
-/*#slideshow {
-    position:relative;
-    height:350px;
-}
-
-#slideshow img {
-  width: 30%;
-  height: 200%;
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:8;
-}
-
-#slideshow img.active {
-    z-index:10;
-}
-
-#slideshow img.last-active {
-    z-index:9;
-}*/
 
 /*---------------------*/
-#pc_img{
-  width: 70%;
-  position: absolute;
+#pc_img img{
+  width: 80%;
+  position: relative;
   top: -70px;
   margin-bottom: 10%;
-  left: 50%;
-  transform: translate(-50%, 0);
 }
 .rectangle img{
   margin: 0.5%;
@@ -118,8 +111,7 @@
 /*---------------------------*/
 #Portfolio img{
   width: 60%;
-  height: auto;
-  margin: 2%;
+  margin: 3%;
 }
 
 /*Sliding drawer menu icon, For Screen size>420px display:none;--> hide*/
@@ -202,7 +194,7 @@ header ul li a:hover {
 }
 
 /*For small screen, screen size <420px */
-@media screen and (max-width: 420px){
+@media screen and (max-width: 757px){
 
       /*Navigation Menu*/
       header ul{
@@ -271,8 +263,26 @@ header ul li a:hover {
           -moz-transform:rotate(45deg);
           transform:rotate(45deg);
       }
-}
 
+      /*slideshow make img smaller and position*/
+      #slideshow{
+        top: 25%;
+        left: 63%;
+      }
+      #slideshow img{
+        width: 60%;
+      }
+      /*-----------------------*/
+}
+@media screen and (max-width: 420px){
+    #slideshow{
+      top: 45%;
+      left: 106%;
+    }
+    #slideshow img{
+      width: 25%;
+    }
+}
 /*footer*/
 footer{
     margin-top: 25px;
