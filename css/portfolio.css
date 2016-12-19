@@ -16,15 +16,22 @@
 .intro span{
   color: #EF788C;
 }
-
+.intro a{
+  color: white;
+}
+.intro a:hover{
+  color: #EF788C;
+}
 /*slide show-----------*/
 
 .bx-wrapper{
   width: 70%;
+  z-index:2;
   /*background-image: url(../img/pc.png);
   background-size: cover;
-  position: absolute;
-  top: -70px;*/
+  position: absolute;*/
+  top: -65px;
+  height: 500px;
 }
 /*.bx-viewport{
   width: 60%;
@@ -32,7 +39,7 @@
 }*/
 
 
-#slideshow {
+/*#slideshow {
     position:relative;
     height:350px;
 }
@@ -52,7 +59,7 @@
 
 #slideshow img.last-active {
     z-index:9;
-}
+}*/
 
 /*---------------------*/
 #pc_img{
@@ -63,9 +70,6 @@
   left: 50%;
   transform: translate(-50%, 0);
 }
-.rectangle{
-    color: #614e4e;
-}
 .rectangle img{
   margin: 0.5%;
   max-width: 280px;
@@ -75,43 +79,47 @@
 .center{
   text-align: center;
 }
-.rectangle p{
-  font-size: 62.5%;
+
+/*Organizing the position of icons and text*/
+.rectangle{
+    color: #614e4e;
+    font-size: 1.5vW;
 }
 #rectangle2{
   position: absolute;
   z-index:2;
-  font-size: 3vW;
-  top: 27%;
+  top: 33%;
   left: 37%;
 }
 #rectangle3{
   position: absolute;
   z-index:2;
-  font-size: 3vW;
-  top: 27%;
+  top: 33%;
   left: 52.5%;
 }
 #rectangle5{
   position: absolute;
   z-index:2;
-  font-size: 3vW;
-  top: 27%;
+  top: 33%;
   left: 23%;
 }
 #rectangle6{
   position: absolute;
   z-index:2;
-  font-size: 3vW;
   top: 27%;
   left: 38.5%;
 }
 #rectangle8{
   position: absolute;
   z-index:2;
-  font-size: 3vW;
   top: 27%;
   left: 69.5%;
+}
+/*---------------------------*/
+#Portfolio img{
+  width: 60%;
+  height: auto;
+  margin: 2%;
 }
 
 /*Sliding drawer menu icon, For Screen size>420px display:none;--> hide*/
@@ -169,7 +177,7 @@ header a img {
     margin:10px;
 }
 header ul {
-    font-size:13px;
+    font-size:20px;
     line-height:1px;
     margin:0px 10px 10px 0px;
     text-align: center;
@@ -212,6 +220,7 @@ header ul li a:hover {
         -moz-transition:.5s ease-in-out;
         transition:.5s ease-in-out;
         text-align:left;
+        font-size: 13px;
       }
       header ul li{
           display:block;
