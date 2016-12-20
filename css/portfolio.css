@@ -11,7 +11,8 @@
   position: relative;
   color: white;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  /*font-family: 'Poppins', sans-serif;*/
+  font-family: 'Chela One', cursive;
 }
 .intro span{
   color: #EF788C;
@@ -27,8 +28,8 @@
   z-index: 2;
   position: absolute;
   width: 500px;
-  height: 281px;
-  top: 20%;
+  height: 280px;
+  top: 15%;
   left: 50%;
   -webkit-transform: translate(-50%,-50%);
   -moz-transform: translate(-50%,-50%);
@@ -45,20 +46,10 @@
     bottom: 10px;
 }
 
-.bx-wrapperul ul li, .bx-viewport ul li{
-  /*width: 40%;*/
-  z-index:2;
-  /*background-image: url(../img/pc.png);
-  background-size: cover;*/
-  position: absolute;
-  top: -35px;
-  left: 50%;
-    transform: translate(-50%, 0);
-}
 
 /*---------------------*/
 #pc_img img{
-  width: 70%;
+  width: 60%;
   position: relative;
   top: -70px;
   margin-bottom: 10%;
@@ -66,54 +57,72 @@
 .rectangle img{
   margin: 0.5%;
   max-width: 280px;
-  width: 15%;
+  width: 22%;
   position: relative;
 }
 .center{
   text-align: center;
 }
-
-/*Organizing the position of icons and text*/
-.rectangle{
-    color: #614e4e;
-    font-size: 1.5vW;
+.left{
+  text-align: left;
 }
+/*Organizing the position of icons and text*/
+.rectangle a{
+    color: #696464;
+    font-size: 2vW;
+}
+.rectangle a:hover{
+  color: #EF788C;
+}
+
 #rectangle2{
   position: absolute;
   z-index:2;
-  top: 33%;
-  left: 37%;
+  top: 38%;
+  left: 32%;
 }
 #rectangle3{
   position: absolute;
   z-index:2;
-  top: 33%;
-  left: 52.5%;
+  top: 38%;
+  left: 54.5%;
 }
 #rectangle5{
   position: absolute;
   z-index:2;
   top: 33%;
-  left: 23%;
+  left: 12%;
 }
 #rectangle6{
   position: absolute;
   z-index:2;
-  top: 27%;
-  left: 38.5%;
+  top: 33%;
+  left: 33.5%;
 }
 #rectangle8{
   position: absolute;
   z-index:2;
-  top: 27%;
-  left: 69.5%;
+  top: 33%;
+  left: 78%;
 }
 /*---------------------------*/
 #Portfolio img{
   width: 60%;
   margin: 3%;
 }
-
+#me h2,
+#contactform h2{
+  font-family: 'Chela One', cursive;
+  color: #696464;
+}
+#me p,
+#me h4,
+#me ul li,
+#contactform label{
+  font-family: 'Acme', sans-serif;
+  color: #696464;
+  font-size: 20px;
+}
 /*Sliding drawer menu icon, For Screen size>420px display:none;--> hide*/
 #navToggle {
     display:none;
@@ -156,6 +165,7 @@ header{
     display:table;
     font-size:0px;
     line-height:0;
+    color: #696464;
 }
 header h1 nav {
     display:table-cell;
@@ -188,9 +198,10 @@ header ul li a {
   color:inherit;
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
+  font-family: 'Pathway Gothic One', sans-serif;
 }
 header ul li a:hover {
-    background: red;
+    background: #EF788C;
 }
 
 /*For small screen, screen size <420px */
@@ -282,6 +293,12 @@ header ul li a:hover {
     #slideshow img{
       width: 25%;
     }
+    /*#pageTop {
+      right: 266px;
+    }
+    #pageTop a {
+      font-size: 60px;
+    }*/
 }
 /*footer*/
 footer{
@@ -314,4 +331,22 @@ footer ul li a {
   color:inherit;
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
+}
+
+/**/
+#pageTop {
+  position: fixed;
+  bottom: 1%;
+  right: 0%;
+  /*bottom: 20px;
+  right: 20px;*/
+}
+#pageTop a {
+  z-index: 10;
+  color: #337ab7;
+  font-size: 80px;
+}
+#pageTop a:hover {
+  /*text-decoration: none;*/
+  opacity: 0.7;
 }

@@ -4,45 +4,44 @@ $(function() {
         $('header').toggleClass('openNav');
     });
 });
-
-
+// When menu is clickded scroll to the section
 $(function(){
-  $("#moveAboutme").click(function(){
+  $(".moveAboutme").click(function(){
       $('body').animate({
          scrollTop: $("#Aboutme").offset().top
       },1200);
   });
 });
 $(function(){
-  $("#moveSkills").click(function(){
+  $(".moveSkills").click(function(){
       $('body').animate({
          scrollTop: $("#Skills").offset().top
       },1200);
   });
 });
 $(function(){
-  $("#movePortfolio").click(function(){
+  $(".movePortfolio").click(function(){
       $('body').animate({
          scrollTop: $("#Portfolio").offset().top
       },1200);
   });
 });
 $(function(){
-  $("#moveCareer").click(function(){
+  $(".moveCareer").click(function(){
       $('body').animate({
          scrollTop: $("#Career").offset().top
       },1200);
   });
 });
 $(function(){
-  $("#moveContact").click(function(){
+  $(".moveContact").click(function(){
       $('body').animate({
          scrollTop: $("#Contact").offset().top
       },1200);
   });
 });
-
-//contact
+// ---------------------
+//contact - send a message to me by Luiz's API
 $(function(){
   var request;
 
@@ -82,7 +81,8 @@ $(function(){
     // alert("hi");
   });
 });
-
+// ---------------------
+// Slideshow
 $(function(){
   $("#slideshow > div:gt(0)").hide();
 
@@ -95,3 +95,30 @@ $(function(){
       .appendTo('#slideshow');
   },  3000);
 });
+// ----------------------
+
+//■page scroll top buttom
+$(function(){
+  var topBtn=$("#pageTop");
+  topBtn.hide();
+
+//buttom show when screen 80px down
+  $(window).scroll(function(){
+    if($(this).scrollTop()>80){
+      //---- buttom show when screen 80px down
+      topBtn.fadeIn();
+    }else{
+      //---- if less than 80px hide
+      topBtn.fadeOut();
+    }
+  });
+
+// when buttom was clicked screen goes to "0"
+  topBtn.click(function(){
+    $("body").animate({
+    scrollTop: 0},1000);
+    return false;
+  });
+
+});
+// ----------------------
